@@ -32,16 +32,22 @@ func directConvertion(value float64, option int8) {
 	switch option {
 	case 1:
 		fmt.Printf("%f °C = %f °F\n", value, (value*1.8)+32)
+
 	case 2:
 		fmt.Printf("%f °C = %f °K\n", value, value+273.15)
+
 	case 3:
 		fmt.Printf("%f °F = %f °C\n", value, (value-32)/1.8)
+
 	case 4:
 		fmt.Printf("%f °F = %f °K\n", value, ((value-32)/32)+273.15)
+
 	case 5:
 		fmt.Printf("%f °K = %f °C\n", value, value-273.15)
+
 	case 6:
 		fmt.Printf("%f °K = %f °F\n", value, ((value-273.15)*1.8)+32)
+
 	default:
 		fmt.Println("Unknown option.")
 	}
